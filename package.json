@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/NGIT-Open-Source/discord-bot#readme",
   "dependencies": {
+    "@discordjs/builders": "^0.5.0",
+    "@discordjs/rest": "*",
+    "discord-api-types": "^0.22.0",
     "discord.js": "^13.1.0"
   }
 }
