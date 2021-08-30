@@ -1,3 +1,3 @@
 # discord-bot
 
-readme change
+read change
