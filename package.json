@@ -1,0 +1,23 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NGIT-Open-Source/discord-bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NGIT-Open-Source/discord-bot/issues"
+  },
+  "homepage": "https://github.com/NGIT-Open-Source/discord-bot#readme",
+  "dependencies": {
+    "discord.js": "^13.1.0"
+  }
+}
