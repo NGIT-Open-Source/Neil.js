@@ -20,4 +20,4 @@ This sections aims at describing all the branches to best possible extinct
 - Then make a PR with this branch to main repo like
 - `` username/discord-bot :: develop branch ==>  NGITOSS/discord-bot :: develop branch ``
 ### Contributions
-Checkout [CONTRIBUTIONS.md](CONTRIBUTIONS.md) for details on contributing to this project.
+Checkout [CONTRIBUTIONS.md](CONTRIBUTIONS.md) for details on contributing to this project

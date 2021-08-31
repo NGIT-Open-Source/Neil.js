@@ -1,6 +1,4 @@
 
-# Getting Started with Contributions
-
 This is a specialized  Guide only made for this project to follow along .
 
 If you need a complete git tutorial watch this [video](https://www.youtube.com/watch?v=apGV9Kg7ics&t=1152s) by Kunal. 
@@ -62,7 +60,12 @@ Well git doesn't seem to properly clone the repo  with all branches so we need t
 
  - Once you are done implementing features or fixing bugs come down to Pushing Changes to show us your contributions✌
 
+# Getting Started with Contributions
+=======
+> Discuss regarding contributions in this [Issue#12](https://github.com/NGIT-Open-Source/discord-bot/issues/12)
+## Making Non-Code Contributions
 
+Non-code contributions include opening [Issues](https://github.com/NGIT-Open-Source/discord-bot/issues) regarding bugs/suggestions etc, Updating Docs through a [PR](https://github.com/NGIT-Open-Source/discord-bot/pulls) and more. It also includes making docs clear and to the point
 ## Getting Help
 
 Ask for help in our official NGIT discord server. We can help you in many ways 
