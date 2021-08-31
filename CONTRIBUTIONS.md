@@ -14,7 +14,7 @@ NOTE: We recommend opening an Issue first and link it to your PullRequest before
  1. Clone this repo to your local directory
  2. Make sure you've Node.js `v16.6.0` or higher installed. [Follow this to install/upgrade Node.js](https://discordjs.guide/preparations/#installing-node-js)
  3. Head to your project folder and run `npm install` in the terminal. *(This command installs all the required packages/modules for the project mentioned in `package.json` in the `node_modules` directory)*
- 4. Finally, Follow the below steps if you want to **run your own instance of bot** for testing/development <details><summary>Run Bot</summary><br>
+ 4. Finally, Follow the below steps if you want to **run your own instance of bot** for testing/development <details><summary>Run Bot</summary>
     1. Edit the values in `config.json.example` (Default values in it will guide you in editing) and finally rename it to `config.json`
        - MAKE SURE NOT TO REVEAL YOUR TOKENS/SECRETS FROM `config.json` ANYWHERE ELSE
        - Get the tokens/ids from discord dev portal. We recommend following Discord.js official docs

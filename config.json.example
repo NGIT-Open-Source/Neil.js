@@ -1,5 +1,5 @@
 {
-    "clientId": "Put your DiscordBot ClientID",
-	"guildId": "Put your Discord GuildID",
-	"token": "Bot token goes here [Mandatory to run the Bot, Get it from Discord Developer Portal]"
+    "clientId": "MANDATORY: Put your DiscordBot ClientID [to register slash(/) commands, available at Application->OAuth page in discord dev portal]",
+	"guildId": "Put your Discord ServerID [to register server-specific slash commands]",
+	"token": "MANDATORY: Bot token goes here [used to validate & run the Bot, available at Application->Bot page in discord dev portal]"
 }
