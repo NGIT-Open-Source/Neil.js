@@ -42,7 +42,7 @@ Well, git doesn't seem to properly clone the repo  with all branches so we need 
 5. Create a file `config.json` and copy the template from `config.json.example`. Make necessary changes in `config.json`.
      - For security, `config.json` will not be commited since it is added to `.gitignore`
      - MAKE SURE NOT TO REVEAL YOUR TOKENS/SECRETS FROM `config.json` ANYWHERE ELSE
-     - Get the tokens/ids from [Discord Dev portal](https://discord.com/developers/applications). We recommend following [Discord.js official docs](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot)
+     - Get the tokens/ids from [Discord Dev portal](https://discord.com/developers/applications). We recommend following official Discord.js docs to [Setup Bot](https://discordjs.guide/preparations/setting-up-a-bot-application.html) and [adding it to your Server](https://discordjs.guide/preparations/adding-your-bot-to-servers.html)
 
 6. Run `node index.js` in the terminal to start your instance of bot
 
