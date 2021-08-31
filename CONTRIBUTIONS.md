@@ -1,26 +1,67 @@
-## Making Non-Code Contributions
 
-Non-code contributions include opening [Issues](https://github.com/NGIT-Open-Source/discord-bot/issues) regarding bugs/suggestions etc, Updating Docs through a [PR](https://github.com/NGIT-Open-Source/discord-bot/pulls) and more.
+# Getting Started with Contributions
 
-## Making Code Contributions
+This is a specialized  Guide only made for this project to follow along .
 
-Before making any contributions, We recommend you to learn the basics of JavasScript first and refer to the official [guide](https://discordjs.guide/#before-you-begin) and [docs](https://discord.js.org/#/docs/main/stable/general/welcome) before making any changes to maintain code quality.
+If you need a complete git tutorial watch this [video](https://www.youtube.com/watch?v=apGV9Kg7ics&t=1152s) by Kunal. 
 
+Well before even starting this tutorial I would like to say that these are some tested methods by us and are intended to be followed by all of our contributors.
 
-NOTE: We recommend opening an Issue first and link it to your PullRequest before opening a PR. It's considered a good practice and makes maintaining the codebase a lot easier.
+### Step 1 : Fork the project
+Go to the [official repository](https://github.com/NGIT-Open-Source/discord-bot) and fork the project to your own account .
+Once you have forked it you must be able to see the fork of your own repo like 
+**username/discord-bot**
+We'll talk more about those branches later.
+### Step 2 : Clone the Forked Repository
+Click on the green *Code*  button and copy the SSH URL.**(FROM THE FORK)**
+Open your desired location on your local computer and right click to open Git Bash
+Paste the SSH URL in it.
 
-## Setting up the project locally [For Testing/Development]
+     git clone git@github.com:<user-name>/discord-bot.git && cd discord-bot
+### Step 3: Adding upstream as a remote to your repository
 
- 1. Clone this repo to your local directory
- 2. Make sure you've Node.js `v16.6.0` or higher installed. [Follow this to install/upgrade Node.js](https://discordjs.guide/preparations/#installing-node-js)
- 3. Head to your project folder and run `npm install` in the terminal. *(This command installs all the required packages/modules for the project mentioned in `package.json` in the `node_modules` directory)*
- 4. Finally, Follow the below steps if you want to **run your own instance of bot** for testing/development <details><summary>Run Bot</summary>
-    1. Edit the values in `config.json.example` (Default values in it will guide you in editing) and finally rename it to `config.json`
-       - MAKE SURE NOT TO REVEAL YOUR TOKENS/SECRETS FROM `config.json` ANYWHERE ELSE
-       - Get the tokens/ids from discord dev portal. We recommend following Discord.js official docs
-    2. Run `node index.js` in the terminal to start your instance of bot
-    </details>
- 5. If you've followed the above steps successfully, You should see your Bot live in discord. 
+Add the upstream URL to your repo using this command
+
+     git remote add upstream git@github.com:NGIT-Open-Source/discord-bot.git
+  You can check the existing remotes using `git remote -v` to verify if it has been added and origin + upstream exist independently and point to correct URL's
+
+### Step 4: Add the tracking branch develop to your repository
+Well git doesn't seem to properly clone the repo  with all branches so we need to create ``develop`` branch and add tracking so run this command
+
+     git checkout --track origin/develop
+  
+### Step 5: Setting up your Local environment 
+1. Checkout to development branch ``git checkout develop``
+
+2. Make sure you've Node.js `v16.6.0` or higher installed. [Follow this to install/upgrade Node.js](https://discordjs.guide/preparations/#installing-node-js)
+
+3. Head to your project folder and run `npm install` in the terminal. *(This command installs all the required packages/modules for the project mentioned in `package.json` in the `node_modules` directory)*
+
+4. Finally, Follow the below steps if you want to **run your own instance of bot** for testing/development <details><summary>Run Bot</summary>
+-  **We would also highly suggest you to create your own server to test your bot out if you are new as we don't want to spam the main server.**
+
+5. Edit the values in `config.json.example` (Default values in it will guide you in editing) and finally rename it to `config.json`
+
+- MAKE SURE NOT TO REVEAL YOUR TOKENS/SECRETS FROM `config.json` ANYWHERE ELSE
+
+- Get the tokens/ids from [Discord Dev portal](https://discord.com/developers/applications). We recommend following [Discord.js official docs](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot)
+
+6. Run `node index.js` in the terminal to start your instance of bot
+
+-  If you've followed the above steps successfully, You should see your Bot live in discord, else you can always get help!
+ 
+7. Make a commit on the current branch (develop) to mark creating of environment variable ``git add . && git commit -m "Environment created"``
+
+</details>
+
+### Step 6: Getting work done finally 
+
+ - To start working now that you are in the develop branch you need to create your own branch from develop , run :: 
+
+      git checkout -b *branch -name*
+
+ - Once you are done implementing features or fixing bugs come down to Pushing Changes to show us your contributions✌
+
 
 ## Getting Help
 
