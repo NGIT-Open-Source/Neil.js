@@ -1,3 +1,4 @@
+# Getting Started with Contributions
 
 This is a specialized  Guide only made for this project to follow along .
 
@@ -5,30 +6,30 @@ If you need a complete git tutorial watch this [video](https://www.youtube.com/w
 
 Well before even starting this tutorial I would like to say that these are some tested methods by us and are intended to be followed by all of our contributors.
 
-### Step 1 : Fork the project
+## Step 1 : Fork the project
 Go to the [official repository](https://github.com/NGIT-Open-Source/discord-bot) and fork the project to your own account .
 Once you have forked it you must be able to see the fork of your own repo like 
 **username/discord-bot**
 We'll talk more about those branches later.
-### Step 2 : Clone the Forked Repository
+## Step 2 : Clone the Forked Repository
 Click on the green *Code*  button and copy the SSH URL.**(FROM THE FORK)**
 Open your desired location on your local computer and right click to open Git Bash
 Paste the SSH URL in it.
 
      git clone git@github.com:<user-name>/discord-bot.git && cd discord-bot
-### Step 3: Adding upstream as a remote to your repository
+## Step 3: Adding upstream as a remote to your repository
 
 Add the upstream URL to your repo using this command
 
      git remote add upstream git@github.com:NGIT-Open-Source/discord-bot.git
   You can check the existing remotes using `git remote -v` to verify if it has been added and origin + upstream exist independently and point to correct URL's
 
-### Step 4: Add the tracking branch develop to your repository
+## Step 4: Add the tracking branch develop to your repository
 Well git doesn't seem to properly clone the repo  with all branches so we need to create ``develop`` branch and add tracking so run this command
 
      git checkout --track origin/develop
   
-### Step 5: Setting up your Local environment 
+## Step 5: Setting up your Local environment 
 1. Checkout to development branch ``git checkout develop``
 
 2. Make sure you've Node.js `v16.6.0` or higher installed. [Follow this to install/upgrade Node.js](https://discordjs.guide/preparations/#installing-node-js)
@@ -52,7 +53,7 @@ Well git doesn't seem to properly clone the repo  with all branches so we need t
 
 </details>
 
-### Step 6: Getting work done finally 
+## Step 6: Getting work done finally 
 
  - To start working now that you are in the develop branch you need to create your own branch from develop , run :: 
 
@@ -60,12 +61,13 @@ Well git doesn't seem to properly clone the repo  with all branches so we need t
 
  - Once you are done implementing features or fixing bugs come down to Pushing Changes to show us your contributions✌
 
-# Getting Started with Contributions
-=======
-> Discuss regarding contributions in this [Issue#12](https://github.com/NGIT-Open-Source/discord-bot/issues/12)
-## Making Non-Code Contributions
+
+### Making Non-Code Contributions
 
 Non-code contributions include opening [Issues](https://github.com/NGIT-Open-Source/discord-bot/issues) regarding bugs/suggestions etc, Updating Docs through a [PR](https://github.com/NGIT-Open-Source/discord-bot/pulls) and more. It also includes making docs clear and to the point
+
+> Discuss regarding contributions in this [Issue#12](https://github.com/NGIT-Open-Source/discord-bot/issues/12)
+
 ## Getting Help
 
 Ask for help in our official NGIT discord server. We can help you in many ways 
