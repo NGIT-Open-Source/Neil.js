@@ -1,0 +1,9 @@
+//DO NOT DELETE
+//THIS IS JUST AN EXAMPLE FILE FOR (conig.json) WHICH YOU HAVE TO MAKE SEPERATE AND FILL OUT THIS JSON 
+//ACCORDING TO THIS TEMPLATE
+
+{
+    "clientId": "Get this developer console of dicord",
+	"guildId": "Turn on developer and right click on the servername to the guild id",
+	"token": "Get this developer console of dicord"
+}

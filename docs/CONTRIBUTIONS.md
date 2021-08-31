@@ -59,14 +59,19 @@ Well git doesn't seem to properly clone the repo  with all branches so we need t
 
       git checkout -b *branch -name*
 
- - Once you are done implementing features or fixing bugs come down to Pushing Changes to show us your contributions✌
+- Once you are done implementing features or fixing bugs come down to [Pushing Changes](PUSHING.MD) to show us your contributions✌
 
 
-### Making Non-Code Contributions
+## Making Non-Code Contributions
 
-Non-code contributions include opening [Issues](https://github.com/NGIT-Open-Source/discord-bot/issues) regarding bugs/suggestions etc, Updating Docs through a [PR](https://github.com/NGIT-Open-Source/discord-bot/pulls) and more. It also includes making docs clear and to the point
+Non-code contributions include opening [Issues](https://github.com/NGIT-Open-Source/discord-bot/issues) regarding bugs/suggestions etc, Updating Docs through a [PR](https://github.com/NGIT-Open-Source/discord-bot/pulls) and more.
 
-> Discuss regarding contributions in this [Issue#12](https://github.com/NGIT-Open-Source/discord-bot/issues/12)
+## Making Code Contributions
+
+Before making any contributions, We recommend you to learn the basics of JavasScript first and refer to the official [guide](https://discordjs.guide/#before-you-begin) and [docs](https://discord.js.org/#/docs/main/stable/general/welcome) before making any changes to maintain code quality.
+
+
+NOTE: We recommend opening an Issue first and link it to your PullRequest before opening a PR. It's considered a good practice and makes maintaining the codebase a lot easier.
 
 ## Getting Help
 
