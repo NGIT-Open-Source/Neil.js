@@ -6,6 +6,8 @@ If you need a complete git tutorial, watch this [video](https://www.youtube.com/
 
 Well, before starting this tutorial I would like to say that these are some tested methods by us and are intended to be followed by all of our contributors.
 
+## Step 0 : Set up Git with GitHub
+Follow this official guide from GitHub to properly [Setup Git](https://docs.github.com/en/get-started/quickstart/set-up-git) with GitHub. **GitHub forces users to install their own GitHub CLI or GitHub Desktop Client, it is recommended to skip these steps and proceed with further steps in the guide.**
 ## Step 1 : Fork the project
 Go to the [official repository](https://github.com/NGIT-Open-Source/discord-bot) and fork the project to your own account .
 Once you have forked it you must be able to see the fork of your own repo like 
@@ -47,12 +49,13 @@ Well, git doesn't seem to properly clone the repo  with all branches so we need 
      - MAKE SURE NOT TO REVEAL YOUR TOKENS/SECRETS FROM `config.json` ANYWHERE ELSE
      - Get the tokens/ids from [Discord Dev portal](https://discord.com/developers/applications). We recommend following official Discord.js docs to [Setup Bot](https://discordjs.guide/preparations/setting-up-a-bot-application.html) and [adding it to your Server](https://discordjs.guide/preparations/adding-your-bot-to-servers.html)
 
-6. Run `node deploy-commands.js` to register commands and then run `node index.js` to start the bot. Refer Discord.js official guide if you run into errors.
-     -  If you've followed the above steps successfully, You should see your Bot live in discord, else you can always get help!
+6. Run `node deploy-commands.js` to register commands and then run `node index.js` OR simply `node .` to start the bot. Refer Discord.js official guide if you run into errors.
+     - `node deploy-commands.js` should be run whenever a new command is added to the commands folder
+     - If you've followed the above steps successfully, You should see your Bot live in discord, else you can always get help!
  
 7. Make a commit on the current branch (develop) to mark creating of environment variable `git add . && git commit -m "Environment created"`
 
-## Step 6: Getting work done finally 
+## Step 6: Getting work done finally
 
  - To start working now that you are in the develop branch you need to create your own branch from develop , run : 
 
