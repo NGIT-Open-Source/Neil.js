@@ -30,11 +30,13 @@ Well, git doesn't seem to properly clone the repo  with all branches so we need 
      git checkout --track origin/develop
   
 ## Step 5: Setting up your Local environment 
-1. Checkout to development branch ``git checkout develop``
+1. Checkout to development branch `git checkout develop`
 
 2. Make sure you've Node.js `v16.6.0` or higher installed. [Follow this to install/upgrade Node.js](https://discordjs.guide/preparations/#installing-node-js)
 
-3. Head to your project folder and run `npm install` in the terminal. *(This command installs all the required packages/modules for the project mentioned in `package.json` in the `node_modules` directory)*
+3. Head to your project folder and run `npm ci` in the terminal. *(This command installs all the required modules for the project mentioned in `package-lock.json` in the `node_modules` directory.*
+     - Don't use `npm install` or `npm update` to install/update modules. Doing so might land you in a situation called **[Dependendency Hell](https://en.wikipedia.org/wiki/Dependency_hell)** whereas using **`npm ci`** ensures you're working with exact versions of dependencies as other developers are. Know more about **npm ci** via [this article](https://lucasfcosta.com/2020/10/17/lockfile-guide.html) or [npm docs](https://docs.npmjs.com/cli/v7/commands/npm-ci)
+     - `npm install <module-name>` can be used if you want to install an external npm module for a feature you're working on. Remember, As stated in [npm-install docs](https://docs.npmjs.com/cli/v7/commands/npm-install) `npm install` works entirely different as compared to `npm install <module-name>`
 
 4. Finally, Follow the below steps if you want to **run your own instance of bot** for testing/development
      -  **We would also highly suggest you to create your own server to test your bot out if you are new as we don't want to spam the main server.**
@@ -74,4 +76,4 @@ NOTE: We recommend opening an Issue first and link it to your PullRequest while 
 
 Ask for help in our official NGIT discord server. We can help you in many ways 
 
-**Help in learning JS** : Either you already know the basics of JS or are a complete beginner, [this FREE course on **Sololearn** can help you learn essential JavaScript](https://www.sololearn.com/learning/1024) in the least possible time - In `DOM & Events` section in the course, we won't be using DOM concepts in this project, Events are important though.<details><summary>SOLOLEARN WARNING</summary>The **Sololearn** course isn't practice-oriented, so make sure you also practice in your local setup while learning on Sololearn.</details>
+**Help in learning JS** : Either you already know the basics of JS or are a complete beginner, [this FREE course on **Sololearn** can help you learn essential JavaScript](https://www.sololearn.com/learning/1024) in the least possible time - In `DOM & Events` section in the course, we won't be using DOM concepts in this project, Events are important though. THIS BASIC COURSE DOESN'T TEACH ASYNCHRONOUS PROGRAMMING AND SOME OTHER IMPORTANT CONCEPTS, TO LEARN ADVANCED JS, REFER THIS [TUTORIAL](https://javascript.info/).<details><summary>SOLOLEARN WARNING</summary>The **Sololearn** course isn't practice-oriented, so make sure you also practice in your local setup while learning on Sololearn.</details>
