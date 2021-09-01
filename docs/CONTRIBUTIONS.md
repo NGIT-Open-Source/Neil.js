@@ -37,6 +37,7 @@ Well, git doesn't seem to properly clone the repo  with all branches so we need 
 3. Head to your project folder and run `npm ci` in the terminal. *(This command installs all the required modules for the project mentioned in `package-lock.json` in the `node_modules` directory.*
      - Don't use `npm install` or `npm update` to install/update modules. Doing so might land you in a situation called **[Dependendency Hell](https://en.wikipedia.org/wiki/Dependency_hell)** whereas using **`npm ci`** ensures you're working with exact versions of dependencies as other developers are. Know more about **npm ci** via [this article](https://lucasfcosta.com/2020/10/17/lockfile-guide.html) or [npm docs](https://docs.npmjs.com/cli/v7/commands/npm-ci)
      - `npm install <module-name>` can be used if you want to install an external npm module for a feature you're working on. Remember, As stated in [npm-install docs](https://docs.npmjs.com/cli/v7/commands/npm-install) `npm install` works entirely different as compared to `npm install <module-name>`
+     - If you've used `npm install/update` unknowingly, Kindly refer [this to fix conflicts](https://github.com/NGIT-Open-Source/discord-bot/issues/16)
 
 4. Finally, Follow the below steps if you want to **run your own instance of bot** for testing/development
      -  **We would also highly suggest you to create your own server to test your bot out if you are new as we don't want to spam the main server.**
