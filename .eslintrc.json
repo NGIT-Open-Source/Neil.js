@@ -7,7 +7,7 @@
 	"parserOptions": {
 		"ecmaVersion": 2021
 	},
-    // Linting is recommended for proper coding style and code quality, Uncomment the rules below
+    // Linting is recommended for proper coding style and code quality
 	"rules": {
         "arrow-spacing": ["warn", { "before": true, "after": true }],
 		"brace-style": ["error", "stroustrup", { "allowSingleLine": true }],
