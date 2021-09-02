@@ -1,3 +1,11 @@
+# Files and directories added to .gitignore will not be tracked and commited
+# Know more about .gitignore file here https://discordjs.guide/creating-your-bot/#git-and-gitignore
+
 node_modules
-.env
 config.json
+
+# we didn't use .env but added to .gitignore for extra safety
+.env 
+
+#start automation script, different for everyone, Add files which aren't expected to be tracked .gitignore here 
+runBot.ps1
