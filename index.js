@@ -7,7 +7,7 @@ const fs = require('fs');
 const { Client, Intents } = require('discord.js');
 const { token } = require('./config.json');
 // Creates a new client instance
-const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
+const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 
 // Loops through events folder and an array of events .js files are stored in eventFiles
 const eventFiles = fs.readdirSync('./events').filter(file => file.endsWith('.js'));
