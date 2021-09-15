@@ -6,10 +6,7 @@
 const fs = require('fs');
 const { Client, Intents } = require('discord.js');
 const { token } = require('./config.json');
-// EXPRESS.js
-const express = require('express');
-const app = express();
-const port = 3000;
+const startServer = require('./server');
 
 // Creates a new client instance
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
@@ -26,14 +23,8 @@ for (const file of eventFiles) {
 		client.on(event.name, (...args) => event.execute(...args));
 	}
 }
+
+// START EXPRESS SERVER
+startServer();
 // Login to Discord with your client's token
 client.login(token);
-
-// Simple Express web server
-app.get('/', (req, res) => {
-	res.send('Bot is LIVE!');
-});
-
-app.listen(port, () => {
-	console.log('Bot listening at default route!');
-});
