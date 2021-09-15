@@ -50,8 +50,10 @@ Well, git doesn't seem to properly clone the repo  with all branches so we need 
      - MAKE SURE NOT TO REVEAL YOUR TOKENS/SECRETS FROM `config.json` ANYWHERE ELSE
      - Get the tokens/ids from [Discord Dev portal](https://discord.com/developers/applications). We recommend following official Discord.js docs to [Setup Bot](https://discordjs.guide/preparations/setting-up-a-bot-application.html) and [adding it to your Server](https://discordjs.guide/preparations/adding-your-bot-to-servers.html)
 
-6. Run `node deploy-commands.js` to register commands and then run `node index.js` OR simply `node .` to start the bot. Refer Discord.js official guide if you run into errors.
-     - `node deploy-commands.js` should be run whenever a new command is added to the commands folder
+6. Run `node deploy-commands.js` to register commands and then run `npm run dev` to start the bot. Refer Discord.js official guide if you run into errors.
+     - Ensure to run `node deploy-commands.js` whenever a new command file is added to the commands folder
+     - Starting the bot with `npm run dev` will enable **hot restart**, which will auto restart the bot on each save. **NOTE:** Discord API blocks developers for a day if they start the bot 1000 times on a single day.
+     Alternative[Only if you think you're going to re-start 1000 times]: Use `node .` or `node index.js` instead of `npm run dev` and forget about hot restart.
      - If you've followed the above steps successfully, You should see your Bot live in discord, else you can always get help!
  
 7. Make a commit on the current branch (develop) to mark creating of environment variable `git add . && git commit -m "Environment created"`

@@ -1,14 +1,15 @@
 // !!!DO NOT DELETE OR MAKE CHANGES TO THIS FILE!!!
 // Check CONTRIBUTIONS.md for details and proper setup
 
+// NOTE: 
+//  1. config.json file contains Secrets/Keys/Tokens and more which aren't meant to be accessed publicly.
+//	- So as soon as you make a config.json file, it won't be commited as we added it to .gitignore
+//  2. Here, Guild is nothing but a Discord Server
+
 // Follow the steps below:
 // 	1. Create a file `config.json` in root directory
 // 	2. Copy the template below to `config.json` and replace the values as mentioned
 
-// NOTE: 
-//	1. config.json file contains Secrets/Keys/Tokens and more which aren't meant to be accessed publicly.
-//		So as soon as you make a config.json file, it won't be commited as we added it to .gitignore
-//  2. Here, Guild is nothing but a Discord Server
 {
     "clientId": "Get this from OAuth settings of your application at Discord Developer Portal ",
 	"guildId": "Turn on developer mode in discord and right click on the servername to get guild(server) id",

@@ -1,4 +1,4 @@
-// This event is triggered when bot interacts with users
+// This event is triggered when users interact via slash(/) commands
 const fs = require('fs');
 const { Client, Collection, Intents } = require('discord.js');
 
