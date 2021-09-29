@@ -3,9 +3,9 @@
 // 1.https://discordjs.guide/creating-your-bot/command-handling.html
 // 2.https://discordjs.guide/creating-your-bot/event-handling.html
 
+require('dotenv').config();
 const fs = require('fs');
 const { Client, Intents } = require('discord.js');
-const { token } = require('./config.json');
 const startServer = require('./server');
 
 // Creates a new client instance
@@ -26,5 +26,5 @@ for (const file of eventFiles) {
 
 // START EXPRESS SERVER
 startServer();
-// Login to Discord with your client's token
-client.login(token);
+// Login to Discord with your bot token
+client.login(process.env.token);
