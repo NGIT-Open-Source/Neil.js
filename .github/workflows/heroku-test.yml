@@ -34,4 +34,4 @@ jobs:
           email: ${{ secrets.EMAIL }}
           api_key: ${{ secrets.HEROKU_API_KEY }}
           app_name: ${{ secrets.HEROKU_APP_NAME }}
-          dockerfile_path: '.' # set the path to the folder where the Dockerfile is located
+          dockerfile_path: '' # set the path to the folder where the Dockerfile is located
