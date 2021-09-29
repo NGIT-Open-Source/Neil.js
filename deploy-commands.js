@@ -2,10 +2,11 @@
 // Failing to do so, New commands can't be registered and accessed on Discord
 // Please refer https://discordjs.guide/creating-your-bot/creating-commands.html
 
+require('dotenv').config();
 const fs = require('fs');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
-const { clientId, guildId, token } = require('./config.json');
+const { clientId, guildId, token } = process.env;
 
 // The below script is setup in such a way that developers don't need to add New commands here manually,
 // Commands will be grabbed from commands/your-command.js directly if you follow the correct methods to create a new command

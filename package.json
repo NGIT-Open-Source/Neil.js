@@ -24,6 +24,7 @@
     "axios": "^0.21.1",
     "discord-api-types": "^0.22.0",
     "discord.js": "^13.1.0",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1"
   },
   "devDependencies": {
