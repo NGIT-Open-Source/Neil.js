@@ -6,7 +6,16 @@ name: Automated Heroku deployment
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ test-ci-cd ]
+    branches: test-ci-cd
+    
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'     
+        required: true
+        default: 'warning'
+      tags:
+        description: 'Test scenario tags'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
