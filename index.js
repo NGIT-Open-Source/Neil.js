@@ -10,7 +10,6 @@ const startServer = require('./server');
 
 // Creates a new client instance
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
-
 // Loops through events folder and an array of events .js files are stored in eventFiles
 const eventFiles = fs.readdirSync('./events').filter(file => file.endsWith('.js'));
 
@@ -23,6 +22,7 @@ for (const file of eventFiles) {
 		client.on(event.name, (...args) => event.execute(...args));
 	}
 }
+module.exports = client;
 
 // START EXPRESS SERVER
 startServer();

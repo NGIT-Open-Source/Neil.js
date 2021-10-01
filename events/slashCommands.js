@@ -1,10 +1,7 @@
 // This event is triggered when users interact via slash(/) commands
+const client = require('../index.js');
 const fs = require('fs');
-const { Client, Collection, Intents } = require('discord.js');
-
-
-// Create a new client instance
-const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
+const { Collection } = require('discord.js');
 
 // Loops through .js files in commands/ present in commands folder and
 // commands are added to `commanFiles` collection as strings
@@ -21,7 +18,7 @@ module.exports = {
 	name: 'interactionCreate',
 	async execute(interaction) {
 		// Uncomment below line if you want to track each and every interaction [It will spam your console]
-		// console.log(`${interaction.user.tag} in #${interaction.channel.name} triggered an interaction.`);
+		// console.log(`${interaction.user.tag} in #${interaction.channel.name} triggered a slash command.`);
 		if (!interaction.isCommand()) return;
 
 		const command = client.commands.get(interaction.commandName);
