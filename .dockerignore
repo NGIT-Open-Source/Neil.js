@@ -1,0 +1,8 @@
+node_modules
+docs
+*.md
+.env
+.env.example
+.eslintrc.json
+.git
+.gitignore

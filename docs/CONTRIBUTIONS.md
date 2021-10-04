@@ -45,13 +45,13 @@ Well, git doesn't seem to properly clone the repo  with all branches so we need 
 4. Finally, Follow the below steps if you want to **run your own instance of bot** for testing/development
      -  **We would also highly suggest you to create your own server to test your bot out if you are new as we don't want to spam the main server.**
 
-5. Create a file `config.json` and copy the template from `config.json.example`. Make necessary changes in `config.json`.
-     - For security, `config.json` will not be commited since it is added to `.gitignore`
-     - MAKE SURE NOT TO REVEAL YOUR TOKENS/SECRETS FROM `config.json` ANYWHERE ELSE
+5. Create a file `.env` and copy the template from `.env.example`. Make necessary changes in `.env`.
+     - For security, `.env` will not be committed since it is added to `.gitignore`
+     - MAKE SURE NOT TO REVEAL YOUR TOKENS/SECRETS FROM `.env` ANYWHERE ELSE
      - Get the tokens/ids from [Discord Dev portal](https://discord.com/developers/applications). We recommend following official Discord.js docs to [Setup Bot](https://discordjs.guide/preparations/setting-up-a-bot-application.html) and [adding it to your Server](https://discordjs.guide/preparations/adding-your-bot-to-servers.html)
 
 6. Run `node deploy-commands.js` to register commands and then run `npm run dev` to start the bot. Refer Discord.js official guide if you run into errors.
-     - Ensure to run `node deploy-commands.js` whenever a new command file is added to the commands folder
+     - Ensure to run `node deploy-commands.js` whenever a new slash command is added to the commands folder
      - Starting the bot with `npm run dev` will enable **hot restart**, which will auto restart the bot on each save. **NOTE:** Discord API blocks developers for a day if they start the bot 1000 times on a single day.
      Alternative[Only if you think you're going to re-start 1000 times]: Use `node .` or `node index.js` instead of `npm run dev` and forget about hot restart.
      - If you've followed the above steps successfully, You should see your Bot live in discord, else you can always get help!
