@@ -22,12 +22,14 @@ const rest = new REST({ version: '9' }).setToken(token);
 
 (async () => {
 	try {
+		console.log('Started refreshing🔄 application Slash(/) commands.');
+
 		await rest.put(
 			Routes.applicationGuildCommands(clientId, guildId),
 			{ body: commands },
 		);
 
-		console.log('Successfully registered application commands.');
+		console.log('Successfully reloaded✅ application Slash(/) commands.');
 	}
 	catch (error) {
 		console.error(error);
