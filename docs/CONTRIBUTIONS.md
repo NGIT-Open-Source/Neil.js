@@ -45,7 +45,8 @@ Well, git doesn't seem to properly clone the repo  with all branches so we need 
 4. Finally, Follow the below steps if you want to **run your own instance of bot** for testing/development
      -  **We would also highly suggest you to create your own server to test your bot out if you are new as we don't want to spam the main server.**
 
-5. Create a file `.env` and copy the template from `.env.example`. Make necessary changes in `.env`.
+5. Let's store secrets/tokens. Create a file with name `.env` and copy/paste template from `.env.example`. Replace default values in `.env` with your secrets/tokens.
+     - **Default values in `.env.example` are self-explanable and will guide you** to fill values, open an issue if you need help
      - For security, `.env` will not be committed since it is added to `.gitignore`
      - MAKE SURE NOT TO REVEAL YOUR TOKENS/SECRETS FROM `.env` ANYWHERE ELSE
      - Get the tokens/ids from [Discord Dev portal](https://discord.com/developers/applications). We recommend following official Discord.js docs to [Setup Bot](https://discordjs.guide/preparations/setting-up-a-bot-application.html) and [adding it to your Server](https://discordjs.guide/preparations/adding-your-bot-to-servers.html)
