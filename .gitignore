@@ -1,0 +1,6 @@
+# Files and directories added to .gitignore will not be tracked and commited
+# Know more about .gitignore file here https://discordjs.guide/creating-your-bot/#git-and-gitignore
+
+node_modules
+.env
+config.json
