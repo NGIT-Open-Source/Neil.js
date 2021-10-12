@@ -5,6 +5,14 @@ on:
   # Triggers the workflow on push
   push:
     branches: [ main ]
+    
+  # Allows manual deployment if required
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Reason for manual deployment..'
+        required: false
+        default: 'testing'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
