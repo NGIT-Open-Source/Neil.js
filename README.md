@@ -1,4 +1,5 @@
-# Discord Bot
+[![Automated deployment](https://github.com/NGIT-Open-Source/discord-bot/actions/workflows/Auto-Deploy.yml/badge.svg?branch=main)](https://github.com/NGIT-Open-Source/discord-bot/actions/workflows/Auto-Deploy.yml)
+# Neil.js Discord Bot
 ###  Branching in this project
 
 This sections aims at describing all the branches to best possible extinct
