@@ -100,7 +100,8 @@ module.exports = {
 		const user = interaction.user.id;
 
 		// prompt user to send code
-		await interaction.reply({ content: `Send your **${lang}** code enclosed in a code block. Request expires in 15 minutes!`, ephemeral: true });
+		const helpLink = 'https://github.com/NGIT-Open-Source/Neil.js/wiki/Run-your-code-with-Neil.js';
+		await interaction.reply({ content: `Send your **${lang}** code enclosed in a code block. [Help](<${helpLink}>)?`, ephemeral: true });
 
 		// Check if any received message by user is a codeblock, if not wait for reply until timer ends
 		// `filter` returns a boolean, code will be processed only when it returns True
