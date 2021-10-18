@@ -8,13 +8,17 @@ const fs = require('fs');
 const { Client } = require('discord.js');
 const startServer = require('./server');
 const { setSlashCmds } = require('./events/slashCommands');
+const { DiscordTogether } = require('discord-together');
 
 // Intents are like permissions for the bot. Here's a list of intents available
 // https://discord.com/developers/docs/topics/gateway#gateway-intents
-const gateway_intents = ['GUILDS', 'GUILD_MESSAGES'];
+const gateway_intents = ['GUILDS', 'GUILD_MESSAGES', 'GUILD_VOICE_STATES'];
 
 // Creates a new client instance
 const client = new Client({ intents: gateway_intents });
+
+// discord-together init
+client.discordTogether = new DiscordTogether(client);
 
 // Loops through events folder and an array of events .js files are stored in eventFiles
 const eventFiles = fs.readdirSync('./events').filter(file => file.endsWith('.js'));
